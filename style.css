@@ -1,0 +1,174 @@
+.textone, .textsecond {
+  text-align: center;
+  font-size: 23px;
+  font-family: 'Noto Serif', serif;
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: center;  /* 横方向中央寄せ */
+  align-items: flex-start;  /* 上揃え */
+  gap: 80px;                /* 画像間のスペース */
+  margin-top: 40px;
+}
+
+.top-row {
+  /* 横幅の最大値を設定して、画面幅が広すぎても画像群が広がりすぎないようにする */
+  max-width: 2000px;
+
+  /* 横幅いっぱいに広がりすぎないよう中央寄せ */
+  margin: 0 auto;
+
+  /* 必要に応じて上下の余白を追加 */
+  margin-top: 40px;
+  margin-bottom: 20px;
+
+  /* 画面幅が狭いときに折り返しを許可したい場合 */
+  flex-wrap: wrap;
+}
+
+/* 上段と下段の間に余白を追加 */
+.bottom-row {
+  margin-top: 18px;  /* 上段との間隔 */
+}
+
+/* 画像＋テキストのセットを縦並びに */
+.item {
+  display: flex; /* 横並びにする */
+  flex-direction: column;
+  align-items: center; /* 画像とテキストを中央揃え */
+  width: 15%;          /* 横幅を揃える */
+}
+
+/* 画像のスタイル */
+.item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px; /* 画像とテキストの間の余白 */
+}
+
+.item:not(:last-child) {
+  padding-right: 20px;            /* 線と内容の間の余白 */
+  margin-right: 20px;             /* 線と次のアイテムの間の余白 */
+}
+
+/* テキストのスタイル */
+.item p {
+  text-align: center;
+  font-family: serif;
+  font-size: 16px;
+  margin: 0;
+}
+
+/* 北海道地方 */
+
+
+hr {
+  border: none;         /* デフォルトの枠線を消す */
+  border-top: 1px solid #ccc; /* 細い線を指定 */
+  margin: 20px 0;       /* 上下の余白 */
+}
+
+body {
+  
+  /*display: flex;        
+  flex-wrap: column; */   
+  gap: 20px;           
+  padding: 10px;
+  box-sizing: border-box;  
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main {
+  width: 100%;           /* 画面幅の20% */
+  height: 500px;
+  box-sizing: border-box;
+  /* floatは不要 */
+  /* float: left; 削除 */
+  display: flex;
+  gap: 10px;            /* 要素間の隙間 */
+
+}
+.sub{
+  width: 50%;           /* 画面幅の20% */
+  height: 500px;
+  box-sizing: border-box;
+  display: flex;
+  gap: 10px;            /* 要素間の隙間 */
+}
+
+.container_left {
+  width: 50%;
+  min-width: 0;
+  height: 500px;
+  margin-bottom: 10px;
+  /* float: left; ← 削除 */
+}
+
+.container_right{
+  width: 50%; 
+  min-width: 0;
+  height: 500px;
+  margin-bottom: 10px;
+  /* float: left; ← 削除 */
+}
+
+.image-row-container {
+  display: flex;  /* 横並び */
+  justify-content: space-between; /* 要素間に均等な隙間 */
+  gap: 10px;      /* flexboxの隙間指定（ブラウザ対応良好） */
+}
+.image-row1,
+.image-row2 {
+  width: 48%;     /* 2つでほぼ100%になるように */
+  height: 60px;
+  /* float: left; ← 削除 */
+}
+
+.boxes{
+  display: flex;
+  gap: 10px; /* 画像間の隙間 */
+}
+
+.food-image{
+  width: 100%;    /* 親要素の幅に合わせる */
+  height: auto;   /* 縦横比を維持 */
+  object-fit: cover; /* 余白を切り詰めて親要素にフィット（必要に応じて） */
+  display: block;
+  margin-bottom: 5px; /* 下に15pxの隙間を作る */
+}
+
+.shop-image{
+  width: calc(50% - 5px); /* gap(10px)の半分ずつ引く */
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.shop-name{
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Noto Serif', serif;
+  color: rgb(121, 60, 60);
+  font-weight: bold;
+}
+
+.place{
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Noto Serif', serif;
+}
+
+.comento{
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Noto Serif', serif;
+}
+
+
